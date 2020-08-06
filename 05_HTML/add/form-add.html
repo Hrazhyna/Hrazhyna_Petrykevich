@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 align="center">Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank" name="form">
+      <fieldset>
+        <legend>Личные даные</legend>
+        <input type="text" name="surname" placeholder="Фамилия" pattern="^[А-Яа-яЁё]+$" maxlength="25" autofocus required /> Только кирилица, без пробелов, обязательное поле, длина поля 25 <br />
+        <input type="text" name="first-name" placeholder="Имя" pattern="^[А-Яа-яЁё]+$" maxlength="20" required /> Только кирилица, без пробелов, обязательное поле, длина поля 20<br />
+        <input type="text" name="name-2" placeholder="Отчество" pattern="^[А-Яа-яЁё]+$" maxlength="24" required /> Только кирилица, без пробелов, обязательное поле, длина поля 24<br />
+        <fieldset>
+          <legend>Паспортные данные</legend>
+        </fieldset>
+      </fieldset>
+      <input type="submit" value="Отправить" />
+    </form>
+  </body>
+</html>
