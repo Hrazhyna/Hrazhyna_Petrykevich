@@ -15,6 +15,17 @@
         <input type="text" name="name-2" placeholder="Отчество" pattern="^[А-Яа-яЁё]+$" maxlength="24" required /> Только кирилица, без пробелов, обязательное поле, длина поля 24<br />
         <fieldset>
           <legend>Паспортные данные</legend>
+          <p>
+            Серия - только заглавные две латинкие буквы, обязательное поле.<br />
+            Номер паспорта - только цифры, обязательное поле.
+          </p>
+          <input type="text" name="series-ID" placeholder="AA" pattern="^[A-Z]{2,}$" size="2" maxlength="2" required />
+          <input type="text" name="number-ID" placeholder="1234567" pattern="^[0-9]{7,}$" size="7" maxlength="7" required />
+        </fieldset>
+        <fieldset>
+          <legend>Дата рождения</legend>
+          <input type="text" name="year" pattern="^[0-9]{4,}$" size="4" maxlength="4" /><br />
+          <input type="month" name="month" />
         </fieldset>
       </fieldset>
       <input type="submit" value="Отправить" />
