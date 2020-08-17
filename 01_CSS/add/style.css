@@ -1,0 +1,17 @@
+header {
+  text-align: right;
+}
+h1 {
+  font-size: medium;
+}
+h3 {
+  text-decoration-line: underline;
+}
+footer {
+  font-weight: bold;
+}
+h3,
+article {
+  font-family: "Bad Script", cursive;
+  text-indent: 2%;
+}
