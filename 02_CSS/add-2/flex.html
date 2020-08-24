@@ -5,52 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flex</title>
     <style>
-      .document {
+      .wrapper {
         display: flex;
+        background-color: #e1e2e0;
+        flex-direction: column;
+      }
+      .footer {
+        background-color: #cdcecc;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
       }
       .nav {
-        border: 2px;
+        width: 15em;
         background-color: #cdcecc;
-        flex: 15em;
+      }
+      .article {
+        display: flex;
+        flex-direction: column;
+      }
+      .article-1,
+      .article-2 {
+        margin-bottom: 0.2em;
+        background-color: #b9b9b8;
+      }
+      .article-2 {
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+        align-self: flex-end;
       }
     </style>
   </head>
   <body>
-    <div class="document">
-      <div class="nav">
-        <h2>Блок навигации</h2>
-        <ul>
-          <li>Ширина 15em</li>
-          <li>Должен присутствовать цвет фона</li>
-          <li>Располагается слева</li>
-          <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
-        </ul>
-      </div>
-      <div>
-        <div class="article">
-          <h2>Статья 1</h2>
-          <p>
-            Размер блока:<br />
-            Занимает всю доступную ширину<br />
-            Должен присутствовать цвет фона<br />
-            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойсва margin-bottom
-          </p>
+    <div class="wrapper">
+      <div class="content">
+        <div class="nav">
+          <h2>Блок навигации</h2>
+          <ul>
+            <li>Ширина 15em</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+          </ul>
         </div>
         <div class="article">
-          <h2>Статья 2</h2>
-          <p>
-            Размер блока:<br />
-            Занимает всю доступную ширину<br />
-            Должен присутствовать цвет фона<br />
-            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойсва margin-bottom. Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной
-            статьи для этой картинки
-          </p>
-        </div>
-        <div class="article"></div>
-        <div>
-          <span>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</span>
+          <div class="article-1">
+            <h2>Статья 1</h2>
+            <p>
+              Размер блока:<br />
+              Занимает всю доступную ширину<br />
+              Должен присутствовать цвет фона<br />
+              Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойсва margin-bottom
+            </p>
+          </div>
+          <div class="article-2">
+            <h2>Статья 2</h2>
+            <p>
+              Размер блока:<br />
+              Занимает всю доступную ширину<br />
+              Должен присутствовать цвет фона<br />
+              Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойсва margin-bottom. Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной
+              статьи для этой картинки
+            </p>
+            <img src="../../04_HTML/image/email.png" alt="photo" />
+          </div>
         </div>
       </div>
+      <footer class="container">
+        <div class="footer">
+          Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
+        </div>
+      </footer>
     </div>
   </body>
 </html>
