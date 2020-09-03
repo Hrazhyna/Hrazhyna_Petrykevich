@@ -10,23 +10,28 @@
         border: 1px dotted gray;
         padding: 5px;
       }
+
       table {
         border-collapse: collapse;
       }
+
       caption {
         caption-side: bottom;
       }
-      .header {
-        background-color: rgb(110, 106, 106);
-        color: white;
+
+      th:only-of-type {
+        text-align: left;
       }
+
       tr:nth-child(2n + 1) {
         background-color: lightgray;
       }
-      .name {
-        text-align: left;
+      tr:first-child {
+        background-color: #6e6a6a;
+        color: white;
+        pointer-events: none;
       }
-      .info:hover {
+      tr:hover {
         cursor: pointer;
         background-color: #ffffa8;
         color: #860686;
@@ -39,47 +44,47 @@
         данные о сотрудниках
       </caption>
       <tr>
-        <th class="header">ФИО</th>
-        <th class="header">пол</th>
-        <th class="header">должность</th>
-        <th class="header">дата рож.</th>
-        <th class="header">Данные 01</th>
-        <th class="header">Данные 02</th>
+        <th>ФИО</th>
+        <th>пол</th>
+        <th>должность</th>
+        <th>дата рож.</th>
+        <th>Данные 01</th>
+        <th>Данные 02</th>
       </tr>
-      <tr class="info">
-        <th class="name">Иванов Иван Иванович</th>
+      <tr>
+        <th>Иванов Иван Иванович</th>
         <td>М</td>
         <td>начальник</td>
         <td>01.01.1960</td>
         <td>4567</td>
         <td>3453</td>
       </tr>
-      <tr class="info">
-        <th class="name">Петрова Илонна Петровна</th>
+      <tr>
+        <th>Петрова Илонна Петровна</th>
         <td>Ж</td>
         <td>секретарь</td>
         <td>01.01.1989</td>
         <td>98795</td>
         <td>46523</td>
       </tr>
-      <tr class="info">
-        <th class="name">Сидоров Илья Игоревич</th>
+      <tr>
+        <th>Сидоров Илья Игоревич</th>
         <td>М</td>
         <td>бухгалтер</td>
         <td>01.01.1979</td>
         <td>743434</td>
         <td>987979</td>
       </tr>
-      <tr class="info">
-        <th class="name">Пупин Фёдор Фёдорович</th>
+      <tr>
+        <th>Пупин Фёдор Фёдорович</th>
         <td>М</td>
         <td>водитель</td>
         <td>01.01.1963</td>
         <td>74323434</td>
         <td>9232379</td>
       </tr>
-      <tr class="info">
-        <th class="name">Крупин Сергей Иванович</th>
+      <tr>
+        <th>Крупин Сергей Иванович</th>
         <td>М</td>
         <td>водитель 2</td>
         <td>01.01.1983</td>
