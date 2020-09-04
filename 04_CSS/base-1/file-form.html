@@ -15,13 +15,14 @@
       ul {
         list-style-image: url("../img/logo-list.jpg");
       }
-      .word a:hover::after {
-        content: url("../img/logo-doc.jpg");
-      }
-      .pdf a:hover::after {
+      ul li:hover:nth-child(2):after {
         content: url("../img/logo-pdf.png");
       }
-      .zip a:hover::after {
+      ul li:hover:first-child::after {
+        content: url("../img/logo-doc.jpg");
+      }
+
+      ul li:hover:last-child:after {
         content: url("../img/logo-zip.gif");
       }
     </style>
@@ -45,9 +46,9 @@
     </p>
     <h2>Это список из файлов</h2>
     <ul>
-      <li class="word"><a href="#">Документ MS Word</a></li>
-      <li class="pdf"><a href="#">Документ PDF</a></li>
-      <li class="zip"><a href="#">Архив</a></li>
+      <li><a href="#">Документ MS Word</a></li>
+      <li><a href="#">Документ PDF</a></li>
+      <li><a href="#">Архив</a></li>
     </ul>
   </body>
 </html>

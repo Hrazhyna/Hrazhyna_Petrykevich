@@ -20,25 +20,25 @@
       li::before {
         content: url("../img/logo-list.jpg");
       }
-      .link::before {
+      p a:first-child:before {
         content: url("../img/extref.png");
       }
-      p .word::after {
+      p a[href$=".doc"]::after {
         content: url("../img/logo-doc.jpg");
       }
-      p .pdf::after {
+      p a[href$=".pdf"]::after {
         content: url("../img/logo-pdf.png");
       }
-      p .zip::after {
+      p a[href$=".zip"]::after {
         content: url("../img/logo-zip.gif");
       }
-      .word a:hover::after {
+      ul li:hover:first-child::after {
         content: url("../img/logo-doc.jpg");
       }
-      .pdf a:hover::after {
+      ul li:hover:nth-child(2):after {
         content: url("../img/logo-pdf.png");
       }
-      .zip a:hover::after {
+      ul li:hover:last-child:after {
         content: url("../img/logo-zip.gif");
       }
     </style>
@@ -46,25 +46,25 @@
   <body>
     <h1>Форматы файлов.</h1>
     <p>
-      .DOC или .doc (от англ. <a href="#" class="link">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без. Расширение .DOC часто использовалось
-      для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br />
-      <a href="#" class="word">Документ MS Word</a>
+      .DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.
+      Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br />
+      <a href="files/document.doc">Документ MS Word</a>
     </p>
     <p>
-      Portable Document Format (<a href="#" class="link">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка
-      PostScript.<br />
-      <a href="#" class="pdf">Документ PDF</a>
+      Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с
+      использованием ряда возможностей языка PostScript.<br />
+      <a href="files/document.pdf">Документ PDF</a>
     </p>
     <p>
-      ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="#" class="link">.zip</a> и хранит в сжатом или несжатом виде один или несколько
-      файлов, которые можно из него извлечь путём распаковки с помощью специальной программы. <br />
-      <a href="#" class="zip">Архив</a>
+      ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_blank">.zip</a> и хранит в сжатом или
+      несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы. <br />
+      <a href="files/document.zip">Архив</a>
     </p>
     <h2>Это список из файлов</h2>
     <ul>
-      <li class="word"><a href="#">Документ MS Word</a></li>
-      <li class="pdf"><a href="#">Документ PDF</a></li>
-      <li class="zip"><a href="#">Архив</a></li>
+      <li><a href="files/document.doc">Документ MS Word</a></li>
+      <li><a href="files/document.pdf">Документ PDF</a></li>
+      <li><a href="files/document.zip">Архив</a></li>
     </ul>
   </body>
 </html>
